@@ -14,7 +14,7 @@
 (function() {
     'use strict';
 
-    var url = window.location.href;
+    var url = window.location.href.replace('zhihu.com', 'fxzhihu.com');
     GM_xmlhttpRequest ( {
     method:     'GET',
     url:        'https://web.archive.org/save/'+url,
